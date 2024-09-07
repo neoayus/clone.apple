@@ -85,6 +85,10 @@ header{
    font-size: 1.12rem ; 
 }
 
+.navbar__icons li:last-child{
+   display: none ; 
+}
+
 .hero{
    position: relative ; 
    height: calc(100% - 44px) ; 
@@ -159,15 +163,26 @@ header{
 
 @media (max-width: 830px){
    .navbar__icons{
-      justify-content: space-around;
+      display: flex ; 
+      justify-content:right ; 
    }
    .navbar__icons li{
       display: none ; 
    }
    
-   .navbar__icons li:nth-child(1),.navbar__icons li:nth-child(13),.navbar__icons li:nth-child(14){
+   .fa-brands.fa-apple{
+      position: absolute ; 
+      top: 13px; 
+      left: 20px; 
+   }
+   
+   .navbar__icons li:nth-child(1),.navbar__icons li:nth-child(13),.navbar__icons li:nth-child(14), .navbar__icons li:nth-child(15){
       display: block ; 
-      padding: 0px 8px ; 
+      padding: 0 13px 0 13px; 
+   }
+   
+   .navbar__icons li:last-child{
+      display: block ; 
    }
    
 }
