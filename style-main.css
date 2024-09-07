@@ -51,7 +51,7 @@ header{
    height: 85vh ; 
    width: 100vw ; 
 
-   background-color: pink ;
+   background-color: rgb(0, 0, 0) ;
 }
 
 .navbar{
