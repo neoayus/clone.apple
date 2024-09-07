@@ -134,6 +134,7 @@ header{
    bottom: -1rem ; 
    width: 35px ; 
    height: 35px ; 
+
    
    color: white ;
    background-color: rgb(39, 39, 39) ; 
@@ -143,4 +144,8 @@ header{
    text-align: center;
    justify-content: center;
    justify-items: center ; 
+}
+
+.hero__media-control >i:first-child{
+   display:none ; 
 }

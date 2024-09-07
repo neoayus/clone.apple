@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
+   <header>
       <div class="navbar">
          <ul class="navbar__icons">
             <li> <i class="fa-brands fa-apple"></i> </li>
@@ -37,7 +37,7 @@
          </ul>
       </div>
       <div class="hero">
-         <video class="hero__background" src="https://github.com/neoayus/clone.apple/raw/main/assets/videos/apple-clip.mp4"   type="video/mp4" autoplay loop muted playsinline> </video>
+         <video class="hero__background" src="./assets/videos/apple-clip.mp4"   type="video/mp4" autoplay loop muted playsinline> </video>
 
          <div class="hero__foreground">
             <div class="foreground__text-large">Apple Event</div>
@@ -45,11 +45,15 @@
             <div class="blue-btn">Learn More</div>
             <button class="hero__media-control">
              <!-- play button  -->
+               <i class="fa-solid fa-pause"></i>
+             <!-- pause button  -->
                <i class="fa-solid fa-play"></i>
             </button>
          </div>
       </div>
-    </header>
-   
+   </header>
+    
+   <script src="app.js"/>
+
 </body>
 </html>
