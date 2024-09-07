@@ -18,3 +18,4 @@ function togglePlay(event){
    }   }
 // adding event listener on button 
 toggleMediaButton.addEventListener("touchstart", togglePlay) ; 
+toggleMediaButton.addEventListener("click", togglePlay) ; 

@@ -144,8 +144,30 @@ header{
    text-align: center;
    justify-content: center;
    justify-items: center ; 
+   
+   opacity: 0.1111 ; 
+
+   &:hover{
+      opacity: 1; 
+      transition: 1s ease ;
+   }
 }
 
 .hero__media-control >i:first-child{
    display:none ; 
+}
+
+@media (max-width: 830px){
+   .navbar__icons{
+      justify-content: space-around;
+   }
+   .navbar__icons li{
+      display: none ; 
+   }
+   
+   .navbar__icons li:nth-child(1),.navbar__icons li:nth-child(13),.navbar__icons li:nth-child(14){
+      display: block ; 
+      padding: 0px 8px ; 
+   }
+   
 }
