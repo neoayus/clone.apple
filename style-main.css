@@ -46,6 +46,14 @@ Miscellaneous
    background-color: #0071e3 ; 
    border-radius: 110px ; 
 }
+.hidden{
+   display: none !important; 
+   transition: 20s ease ;
+}
+.visible{
+   display: block !important;
+   transition: 0.5s ease ;
+}
 /*  */
 header{
    height: 85vh ; 
@@ -83,10 +91,6 @@ header{
 .navbar__icons i{
    color: white ; 
    font-size: 1.12rem ; 
-}
-
-.navbar__icons li:last-child{
-   display: none ; 
 }
 
 .hero{
@@ -157,9 +161,6 @@ header{
    }
 }
 
-.hero__media-control >i:first-child{
-   display:none ; 
-}
 
 @media (max-width: 830px){
    .navbar__icons{
@@ -180,9 +181,4 @@ header{
       display: block ; 
       padding: 0 13px 0 13px; 
    }
-   
-   .navbar__icons li:last-child{
-      display: block ; 
-   }
-   
 }

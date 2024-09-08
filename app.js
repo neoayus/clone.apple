@@ -20,10 +20,12 @@ function togglePlay(event){
 // adding event listener on button 
 toggleMediaButton.addEventListener("click", togglePlay) ; 
 
-// Action to perform when Hamburger Button is Clicked. 
+////////////////
 var hamburgerButton = document.querySelectorAll("i")[3] ; 
-var navbar = document.querySelector(".navbar") ;
-// event listener to trigger on touch to show menu. 
-hamburgerButton.addEventListener("click", ()=>{
-   console.log("clicked!") ;
-})
+var cross = document.querySelectorAll("i")[4] ; 
+function handleResize(){
+   if(window.innerWidth < 830){
+      hamburgerButton.classList.remove("hidden") ; 
+   }
+}
+window.addEventListener("resize",handleResize) ;
