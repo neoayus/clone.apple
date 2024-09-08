@@ -7,15 +7,16 @@ var play = document.querySelectorAll(".hero__media-control i")[1] ;
 function togglePlay(event){
    if(video.paused){
       video.play() ; 
-      console.log("played") ;
       pause.style.display = 'none' ; 
       play.style.display = 'block' ; 
    }else{
       video.pause() ; 
-      console.log("paused") ;
       play.style.display = 'none' ; 
       pause.style.display = 'block' ; 
    }   }
 // adding event listener on button 
-toggleMediaButton.addEventListener("touchstart", togglePlay) ; 
+toggleMediaButton.addEventListener("touch", togglePlay) ; 
 toggleMediaButton.addEventListener("click", togglePlay) ; 
+
+// Action to perform when Hamburger Button is Clicked. 
+var hamburgerButton
