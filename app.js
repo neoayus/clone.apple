@@ -40,10 +40,28 @@ window.addEventListener("resize", handleNavbarOnResize) ;
 
 //===========================================================
 // adding event listener on hamburger button: 
+var navbar = document.querySelector(".navbar") ;
 function expandNavbar(event){
-   console.log("button clicked! ") ;
-}
-//
+   navbar.classList.add("transit") ; 
+   navbar.style.height = '100vh' ; 
 
-// 
+ // hiding icons 
+   let icons = document.querySelectorAll(".icon") ; 
+   for( let icon of icons){
+      icon.classList.add("hidden") ;  
+   }
+   hamburgerButton.classList.add("hidden") ;
+
+ // creating 'X' icon:
+   let xMark = document.createElement("i") ;
+   xMark.setAttribute("class","fa-solid fa-xmark") ;
+   xMark.classList.add("iicons") ; 
+ // adding 'X' icon:
+   document.querySelector(".navbar").appendChild(xMark) ;
+   xMark.style.position = 'absolute' ;
+   xMark.style.top = '10px' ;
+   xMark.style.right = '-3px' ;
+
+}
+
 hamburgerButton.addEventListener("click", expandNavbar) ; 
