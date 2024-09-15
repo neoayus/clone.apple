@@ -69,3 +69,7 @@ Miscellaneous
    align-self: center;  
    /* align-content: center ; */
 }
+
+.transit{
+   transition: 1.5s ease ;
+}
