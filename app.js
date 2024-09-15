@@ -1,8 +1,8 @@
-// TOGGLE VIDEO PLAY BUTTON.
+//  toggling video control button on bottom-right corner. 
 var video = document.querySelector(".hero__background") ;
-var toggleMediaButton = document.querySelector(".hero__media-control") ;
 var play = document.querySelectorAll(".hero__media-control i")[0] ;
 var pause = document.querySelectorAll(".hero__media-control i")[1] ; 
+var toggleMediaButton = document.querySelector(".hero__media-control") ;
 
 function togglePlay(event){
    if(video.paused){
@@ -17,15 +17,8 @@ function togglePlay(event){
       play.style.display = 'block' ; 
    }   
 }
-// adding event listener on button 
+
 toggleMediaButton.addEventListener("click", togglePlay) ; 
 
-////////////////
-var hamburgerButton = document.querySelectorAll("i")[3] ; 
-var cross = document.querySelectorAll("i")[4] ; 
-function handleResize(){
-   if(window.innerWidth < 830){
-      hamburgerButton.classList.remove("hidden") ; 
-   }
-}
-window.addEventListener("resize",handleResize) ;
+//===========================================================
+// Function to handle elements on resize : width < 830px 
