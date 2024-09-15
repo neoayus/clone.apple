@@ -46,6 +46,28 @@ function expandNavbar(event){
    navbar.classList.add("transit") ; 
    navbar.style.height = '100vh' ; 
 
+ // adding list . 
+   let listItems = document.querySelectorAll(".navbar__icons li") ;
+   let list = document.createElement('ul') ;
+   navbar.appendChild(list) ;
+   list.classList.add("transit") ;
+
+ //styling list : 
+   list.classList.add("js-list");
+   // list.style.display = 'block' ;
+   // list.style.width = '100%' ;
+   // list.style.height = '100%' ;
+   // list.style.listStyleType = 'none' ;
+   // list.style.position = 'absolute' ;
+   // list.style.color = 'white' ;
+
+   for(listItem of listItems){
+      var li = document.createElement('li'); 
+      list.appendChild(li) ;
+      // li.textContent = listItem.textContent ; 
+      li.textContent = listItem.textContent ; 
+   } 
+
  // hiding icons 
    let icons = document.querySelectorAll(".icon") ; 
    for( let icon of icons){
@@ -72,8 +94,11 @@ function expandNavbar(event){
       }
       hamburgerButton.classList.remove("hidden") ;
       xMark.classList.add("hidden");
+      list.classList.add("hidden") ;
    }
+
    xMark.addEventListener("click",collapseNavbar) ;
+
 }
 
 hamburgerButton.addEventListener("click", expandNavbar) ; 
