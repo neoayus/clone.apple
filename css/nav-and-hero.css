@@ -122,6 +122,9 @@ header{
    
    .navbar__icons li:nth-child(1),.navbar__icons li:nth-child(13),.navbar__icons li:nth-child(14), .navbar__icons li:nth-child(15){
       display: block ; 
-      padding: 0 13px 0 13px; 
+      /* padding: 0 8px ;  */
+   }
+   .navbar li i{
+      margin: 0 6px ;  
    }
 }
