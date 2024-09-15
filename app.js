@@ -56,12 +56,23 @@ function expandNavbar(event){
    let xMark = document.createElement("i") ;
    xMark.setAttribute("class","fa-solid fa-xmark") ;
    xMark.classList.add("iicons") ; 
+
  // adding 'X' icon:
    document.querySelector(".navbar").appendChild(xMark) ;
    xMark.style.position = 'absolute' ;
    xMark.style.top = '10px' ;
    xMark.style.right = '-3px' ;
 
+ // feat: making X functional    
+   function collapseNavbar(){
+      navbar.style.height = '44px' ; 
+      for( let icon of icons){
+         icon.classList.remove("hidden") ;  
+      }
+      hamburgerButton.classList.remove("hidden") ;
+      xMark.classList.add("hidden");
+   }
+   xMark.addEventListener("click",collapseNavbar) ;
 }
 
 hamburgerButton.addEventListener("click", expandNavbar) ; 
