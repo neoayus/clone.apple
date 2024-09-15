@@ -37,6 +37,7 @@ function handleNavbarOnResize(event){
    }
 }
 window.addEventListener("resize", handleNavbarOnResize) ; 
+window.addEventListener("load", handleNavbarOnResize) ; 
 
 //===========================================================
 // adding event listener on hamburger button: 
