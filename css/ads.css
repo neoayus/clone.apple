@@ -3,7 +3,6 @@
    width: 100vw ; 
    margin-top: 13px ; 
    
-   background-image: url('../assets/images/iPhone16.jpg') ; 
    background-size: cover ; 
    background-position: center;
    background-repeat: no-repeat ; 
@@ -35,6 +34,28 @@
 
 .hor-ad__lower-div p{
    padding-top: 10px ; 
+}
+
+ /* 2ND ADVERTISEMENT  */
+.hor-ad.two .hor-ad__lower-div{
+   display: flex ; 
+   flex-direction : column ; 
+   align-items: center;
+   justify-content: top ;
+   gap: 10px ; 
+}
+
+.hor-ad__lower-div .apple-watch{
+   width: 200px ; 
+   height:80px ; 
+   background-repeat: no-repeat ; 
+   background-size: contain ; 
+   margin-top: 40px ;
+}
+
+.hor-ad__lower-div .txt{
+   font-size: 28px ; 
+   font-weight: 400;
 }
 
 
