@@ -12,12 +12,16 @@ Miscellaneous
 */
 
 /* IMPORTING ALL THE CSS HERE IN THIS MAIN STYLESHEET FILE  */
+@import url();
 @import url( /* css file */ );
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
  /* Attached CSS Files  */
-/* for nav-bar and hero */
+ /* for nav-bar and hero */
 @import url('./css/nav-and-hero.css') ;
+
+/* for ads section */
+@import url(./css/ads.css) ;
 
 *{
    border: 0 ; 
