@@ -1,0 +1,38 @@
+.hor-ad{
+   height: 580px; 
+   width: 100vw ; 
+   margin-top: 13px ; 
+   
+   background-image: url('../assets/images/iPhone16.jpg') ; 
+   background-size: cover ; 
+   background-position: center;
+   background-repeat: no-repeat ; 
+   
+   display: flex ; 
+   flex-direction: column;
+   justify-content: space-between;
+
+   text-align: center;
+}
+
+.hor-ad__upper-div{
+   color: white; 
+   font-size: 26px ; 
+   font-weight: 500;   
+
+   padding-top: 50px;
+}
+
+.hor-ad__upper-div--large{ 
+   font-size: 50px ; 
+}
+
+.hor-ad__lower-div{
+   padding-bottom: 50px;
+   color: black ; 
+   font-size: 22px ;
+}
+
+.hor-ad__lower-div p{
+   padding-top: 10px ; 
+}
