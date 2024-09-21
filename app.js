@@ -106,16 +106,16 @@ hamburgerButton.addEventListener("click", expandNavbar) ;
 //===========================================================
 // HOVER EFFECT FOR NAV_BAR ITEMS '
 // adding a list bar : 
-var listbar = document.createElement('div') ; 
-listbar.classList.add("js-listbar") ;
-navbar.append(listbar) ;
+// var listbar = document.createElement('div') ; 
+// listbar.classList.add("js-listbar") ;
+// navbar.append(listbar) ;
 
-// store 
-var store = document.querySelectorAll(".navbar__icons li")[1] ;
-function hoverOnStore(){
-   console.log("slatt") ;
-   listbar.style.height = '70vh'; 
-   listbar.classList.add("transit"); 
-}
-store.addEventListener("mouseenter", hoverOnStore) ;
+// // store 
+// var store = document.querySelectorAll(".navbar__icons li")[1] ;
+// function hoverOnStore(){
+//    console.log("slatt") ;
+//    listbar.style.height = '70vh'; 
+//    listbar.classList.add("transit"); 
+// }
+// store.addEventListener("mouseenter", hoverOnStore) ;
 
