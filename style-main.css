@@ -95,3 +95,12 @@ Miscellaneous
    gap: 10px ; 
 }
 
+.js-listbar{
+   width: 100vw ; 
+   height: 0px ; 
+   background-color: var(--bg-color) ; 
+   position: absolute ; 
+   z-index: 2; 
+   top: 100%; 
+   left: 0 ; 
+}

@@ -6,6 +6,7 @@ header{
 }
 
 .navbar{
+   position: relative ; 
    height: 44px ; 
    width: 100%; 
 
