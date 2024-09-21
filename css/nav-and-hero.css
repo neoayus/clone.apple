@@ -6,7 +6,9 @@ header{
 }
 
 .navbar{
-   position: relative ; 
+   position: fixed ; 
+   z-index: 2;
+
    height: 44px ; 
    width: 100%; 
 
