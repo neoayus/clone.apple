@@ -36,3 +36,21 @@
 .hor-ad__lower-div p{
    padding-top: 10px ; 
 }
+
+
+@media (max-width: 770px){
+   .hor-ad{
+      background-image: url('../assets/images/iphone16-responsive.jpg') ; 
+      background-size: cover; 
+      background-position: center;
+      background-repeat: no-repeat ; 
+      
+      display: flex ; 
+      flex-direction: column;
+      justify-content: space-between;
+
+      text-align: center;
+   }
+
+   
+}
