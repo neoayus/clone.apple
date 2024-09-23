@@ -23,6 +23,10 @@ Miscellaneous
 /* for ads section */
 @import url(./css/ads.css) ;
 
+/* for footer */ 
+@import url(./css/footer.css) ;
+
+
 *{
    border: 0 ; 
    margin: 0 ; 
