@@ -7,4 +7,5 @@ I'll attempt to recreate [Apple Website](https://www.apple.com/) from Scratch.
 
 ### Things i learned in making of this project. 
 1. Video Tag and their elements.
-2. ...
+2. To make websites responsive, go for 'mobile-first' approach. 
+3. 
